@@ -1,0 +1,337 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>李晓峰健身打卡</title>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="equipment.css">
+</head>
+<body>
+<main class="app">
+<header>
+<div>
+<p class="eyebrow">MUSCLE BUILDING PLAN</p>
+<h1>李晓峰的增肌计划</h1>
+<p id="today">
+</p>
+</div>
+<div class="streak">
+<strong id="streak">0</strong>
+<span>连续天数</span>
+</div>
+</header>
+<section class="profile card">
+<div>
+<span>用户</span>
+<b>李晓峰 · 男</b>
+</div>
+<div>
+<span>年龄</span>
+<b>22 岁</b>
+</div>
+<div>
+<span>身高 / 体重</span>
+<b>174cm / 140斤</b>
+</div>
+<div>
+<span>目标</span>
+<b>增肌塑形 · 练出痕迹</b>
+</div>
+</section>
+<section class="hero card">
+<div>
+<span class="tag" id="statusTag">今日待完成</span>
+<h2>先用完铁锤7次，再长期练唤燃星</h2>
+<p>目标：增肌＋减脂塑形。每次力量训练结束后完成对应有氧。</p>
+</div>
+<button id="checkinBtn">完成今日打卡</button>
+</section>
+<nav class="tabs">
+<button class="tab active" data-tab="training">训练计划</button>
+<button class="tab" data-tab="cardio">有氧</button>
+<button class="tab" data-tab="diet">饮食</button>
+<button class="tab" data-tab="tracking">记录</button>
+</nav>
+<section id="training" class="tab-page active">
+<section class="card panel transition-plan"><p class="eyebrow">GYM TRANSITION</p><h2>门店过渡计划</h2><div class="visit-plan"><span><b>铁锤 1</b> 胸＋二头＋坡度走</span><span><b>铁锤 2</b> 背＋三头＋单车</span><span><b>铁锤 3</b> 腿＋肩＋轻松走</span><span><b>铁锤 4</b> 胸＋二头＋坡度走</span><span><b>铁锤 5</b> 背＋三头＋单车</span><span><b>铁锤 6</b> 腿＋肩＋轻松走</span><span><b>铁锤 7</b> 胸＋二头＋坡度走</span></div><p class="guide">7次结束后，在唤燃星许坦东街店继续按 1→2→3 循环。公开资料无法可靠确认两店完整器械清单，当前采用常见固定器械；首次到店按名称核对。</p></section>
+<section class="card panel notice">
+<b>训练规则</b>
+<p>每个动作先做1–2组轻重量热身。正式组保留约2次余力，组间休息60–120秒。每次力量后完成15–30分钟有氧。</p>
+</section>
+<div class="plan-grid">
+<article class="card plan">
+<span class="plan-no">1</span>
+<h2>胸 · 二头</h2>
+<p class="sub">胸部厚度与手臂线条｜约60分钟</p>
+<ol>
+<li>
+<b>坐姿胸推机</b>
+<span>4组 × 8–10次｜把手对准胸中部，肩胛贴靠背</span>
+</li>
+<li>
+<b>上斜胸推机</b>
+<span>4组 × 8–10次｜把手对准上胸，不耸肩</span>
+</li>
+<li>
+<b>蝴蝶机夹胸</b>
+<span>3组 × 12–15次｜手肘微弯，胸前合拢</span>
+</li>
+<li>
+<b>牧师凳弯举机</b>
+<span>3组 × 10–12次｜腋窝贴垫，手肘不离垫</span>
+</li>
+<li>
+<b>绳索弯举（龙门架）</b>
+<span>3组 × 10–12次｜滑轮最低位，手肘夹紧</span>
+</li>
+<li>
+<b>哑铃锤式弯举</b>
+<span>2组 × 12次｜唯一自由重量动作，可选做</span>
+</li>
+</ol>
+</article>
+<article class="card plan">
+<span class="plan-no">2</span>
+<h2>背 · 三头</h2>
+<p class="sub">背宽、背厚与手臂围度｜约60分钟</p>
+<ol>
+<li>
+<b>高位下拉机</b>
+<span>4组 × 8–10次｜大腿压紧，拉至锁骨附近</span>
+</li>
+<li>
+<b>坐姿划船机</b>
+<span>4组 × 10次｜胸贴垫，手肘向后拉</span>
+</li>
+<li>
+<b>器械高位划船</b>
+<span>3组 × 10次｜胸贴垫，向肋骨方向拉</span>
+</li>
+<li>
+<b>反向蝴蝶机</b>
+<span>3组 × 12–15次｜胸贴垫，手臂向两侧打开</span>
+</li>
+<li>
+<b>绳索下压（龙门架）</b>
+<span>3组 × 10–12次｜滑轮最高位，手肘固定</span>
+</li>
+<li>
+<b>坐姿臂屈伸机</b>
+<span>3组 × 10–12次｜背贴靠垫，只伸手肘</span>
+</li>
+</ol>
+</article>
+<article class="card plan">
+<span class="plan-no">3</span>
+<h2>腿 · 肩</h2>
+<p class="sub">下肢基础与肩部轮廓｜约65分钟</p>
+<ol>
+<li>
+<b>45度腿举机</b>
+<span>4组 × 10次｜脚与肩同宽，膝盖不锁死</span>
+</li>
+<li>
+<b>坐姿腿弯举机</b>
+<span>4组 × 10–12次｜膝轴对准机器转轴</span>
+</li>
+<li>
+<b>腿屈伸机</b>
+<span>3组 × 10–12次｜滚垫在脚踝上方</span>
+</li>
+<li>
+<b>坐姿肩推机</b>
+<span>4组 × 8–10次｜把手略低于肩，腰背贴垫</span>
+</li>
+<li>
+<b>器械侧平举</b>
+<span>3组 × 12–15次｜手肘贴垫，抬至肩高</span>
+</li>
+<li>
+<b>反向蝴蝶机</b>
+<span>3组 × 12–15次｜胸贴垫，不要耸肩</span>
+</li>
+</ol>
+</article>
+</div>
+<section class="card panel daily-abs">
+<span class="plan-no">每天可做</span>
+<h2>腹部训练 · 8–12分钟</h2>
+<p class="guide">每次任选2–3项：卷腹3×15、悬垂/仰卧举腿3×10–12、死虫式每侧3×10、平板支撑3×40秒。动作慢而稳定，不借力；明显酸痛时休息，不要每天练到力竭。</p>
+</section>
+<section class="card panel equipment-guide">
+<p class="eyebrow">EQUIPMENT GUIDE</p><h2>固定器械识别图</h2><p class="guide">按图片从左到右、从上到下识别。不同品牌外形会不同，找不到时把名称给健身房教练看。</p>
+<img src="assets/gym-machines-guide.png" alt="九种健身房固定器械识别图">
+<div class="equipment-labels"><span><b>1</b> 坐姿胸推机</span><span><b>2</b> 上斜胸推机</span><span><b>3</b> 蝴蝶机夹胸</span><span><b>4</b> 高位下拉机</span><span><b>5</b> 坐姿划船机</span><span><b>6</b> 龙门架下压</span><span><b>7</b> 45°腿举机</span><span><b>8</b> 坐姿肩推机</span><span><b>9</b> 反向蝴蝶机</span></div>
+</section>
+<section class="card panel">
+<h2>重量进阶</h2>
+<p class="guide">选择“完成目标次数后还能规范做2次”的重量。连续两次完成全部次数后，上肢加1–2.5kg、下肢加2.5–5kg。若关节疼或动作变形，立即减重或停止。</p>
+</section>
+</section>
+<section id="cardio" class="tab-page">
+<div class="plan-grid two">
+<article class="card plan featured">
+<span class="plan-no">首选</span>
+<h2>坡度快走</h2>
+<ol>
+<li>
+<b>热身</b>
+<span>平路慢走5分钟</span>
+</li>
+<li>
+<b>主体</b>
+<span>坡度3–7%，快走20–30分钟</span>
+</li>
+<li>
+<b>强度</b>
+<span>能说短句，不能轻松唱歌</span>
+</li>
+<li>
+<b>放松</b>
+<span>平路慢走5分钟</span>
+</li>
+</ol>
+</article>
+<article class="card plan">
+<span class="plan-no">替换</span>
+<h2>单车 / 椭圆机</h2>
+<ol>
+<li>
+<b>稳定版</b>
+<span>中低强度25–35分钟</span>
+</li>
+<li>
+<b>间歇版</b>
+<span>快1分钟＋慢2分钟，循环8次</span>
+</li>
+<li>
+<b>安排</b>
+<span>力量后做稳定版；不安排游泳</span>
+</li>
+</ol>
+</article>
+</div>
+<section class="card panel notice">
+<b>力量训练后的固定有氧</b>
+<p>胸二头后：坡度快走25–30分钟；背三头后：单车或椭圆机25–30分钟；腿肩后：平路/低坡轻松走15–20分钟。保持能说短句的强度，不冲刺；膝痛时改单车。</p>
+</section>
+</section>
+<section id="diet" class="tab-page">
+<section class="card panel notice">
+<b>增肌减脂塑形目标</b>
+<p>先从每天约2200–2400千卡试行，蛋白质约130–150g，饮水2–2.5L。目标是腰围下降、力量上升；连续2周腰围不降且体重上升，每天减约150千卡。</p>
+</section>
+<div class="meal-grid">
+<article class="card meal">
+<span>早餐</span>
+<h2>高蛋白开场</h2>
+<p>燕麦60g＋牛奶300ml＋鸡蛋2个＋香蕉1根</p>
+</article>
+<article class="card meal">
+<span>午餐</span>
+<h2>主力正餐</h2>
+<p>米饭1.5–2碗＋鸡胸/瘦牛肉/鱼180–200g＋蔬菜2拳</p>
+</article>
+<article class="card meal">
+<span>训练前 1–2小时</span>
+<h2>补充能量</h2>
+<p>香蕉1根＋面包2片＋无糖酸奶，避免油炸和过饱</p>
+</article>
+<article class="card meal">
+<span>训练后 / 晚餐</span>
+<h2>恢复生长</h2>
+<p>米饭1.5碗＋鱼虾/鸡肉/瘦肉180–200g＋蔬菜；睡前可加牛奶</p>
+</article>
+</div>
+<section class="card panel">
+<h2>执行原则</h2>
+<p class="guide">每天至少3顿，每顿有一掌半左右的优质蛋白；主食不要取消。蛋白粉不是必需品，只有普通食物吃不够蛋白质时才考虑。睡眠尽量保证7–9小时。</p>
+</section>
+</section>
+<section id="tracking" class="tab-page">
+<section class="stats">
+<div class="card stat">
+<span>本月打卡</span>
+<strong id="monthCount">0</strong>
+<small>天</small>
+</div>
+<div class="card stat">
+<span>累计打卡</span>
+<strong id="totalCount">0</strong>
+<small>次</small>
+</div>
+<div class="card stat">
+<span>本周训练</span>
+<strong id="weekCount">0</strong>
+<small>天</small>
+</div>
+</section>
+<section class="grid">
+<form id="workoutForm" class="card panel">
+<h2>保存本次训练</h2>
+<label>训练地点<select id="gym"><option>铁锤健身·常青藤</option><option>唤燃星24小时·许坦东街店</option></select></label>
+<label>完成内容<select id="type">
+<option>训练1：胸和二头</option>
+<option>训练2：背和三头</option>
+<option>训练3：腿和肩</option>
+<option>每日腹部</option>
+<option>坡度快走</option>
+<option>单车 / 椭圆机</option>
+</select>
+</label>
+<div class="form-row">
+<label>时长（分钟）<input id="duration" type="number" min="1" value="60">
+</label>
+<label>感受<select id="feeling">
+<option>正常完成</option>
+<option>状态很好</option>
+<option>有点吃力</option>
+</select>
+</label>
+</div>
+<label>重量与次数<textarea id="note" placeholder="例如：卧推40kg 4×8">
+</textarea>
+</label>
+<button class="secondary">保存训练内容</button>
+<p id="saveHint" class="hint">
+</p>
+</form>
+<section class="card panel">
+<div class="section-title">
+<h2>最近记录</h2>
+<button class="text-btn" id="clearBtn">清空</button>
+</div>
+<div id="records" class="records">
+</div>
+</section>
+</section>
+<section class="card panel calendar-panel">
+<div class="section-title">
+<h2 id="calendarTitle">
+</h2>
+<div class="legend">
+<i>
+</i> 已打卡</div>
+</div>
+<div class="weekdays">
+<span>一</span>
+<span>二</span>
+<span>三</span>
+<span>四</span>
+<span>五</span>
+<span>六</span>
+<span>日</span>
+</div>
+<div id="calendar" class="calendar">
+</div>
+</section>
+</section>
+<footer>计划按健康新手设置。如有疾病、近期伤病或医生限制，请先咨询专业人员；胸痛、眩晕或尖锐疼痛时立即停止训练。</footer>
+</main>
+<div id="toast" class="toast">
+</div>
+<script src="app.js">
+</script>
+</body>
+</html>
+
