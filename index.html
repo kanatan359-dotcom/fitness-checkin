@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#176b45"><link rel="manifest" href="manifest.webmanifest">
 <title>李晓峰健身打卡</title>
-<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="equipment.css"><link rel="stylesheet" href="rewards.css">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="equipment.css"><link rel="stylesheet" href="rewards.css"><link rel="stylesheet" href="flexible.css">
 </head>
 <body>
 <main class="app">
@@ -54,8 +54,8 @@
 <button class="tab" data-tab="tracking">记录</button>
 </nav>
 <section id="training" class="tab-page active">
-<section class="card panel today-workout"><div class="today-head"><div><p class="eyebrow">NEXT WORKOUT</p><h2 id="nextTitle">今日训练</h2><p id="nextMeta" class="guide"></p></div><div class="remaining"><strong id="hammerLeft">7</strong><span>铁锤剩余</span></div></div><div id="setTracker" class="set-tracker"></div><div id="postCardio" class="post-cardio"></div><button id="finishWorkout" class="secondary" type="button">保存全部并完成训练</button></section>
-<section class="card panel transition-plan"><p class="eyebrow">GYM TRANSITION</p><h2>门店过渡计划</h2><div class="visit-plan"><span><b>铁锤 1</b> 胸＋二头＋坡度走</span><span><b>铁锤 2</b> 背＋三头＋单车</span><span><b>铁锤 3</b> 腿＋肩＋轻松走</span><span><b>铁锤 4</b> 胸＋二头＋坡度走</span><span><b>铁锤 5</b> 背＋三头＋单车</span><span><b>铁锤 6</b> 腿＋肩＋轻松走</span><span><b>铁锤 7</b> 胸＋二头＋坡度走</span></div><p class="guide">7次结束后，在唤燃星许坦东街店继续按 1→2→3 循环。公开资料无法可靠确认两店完整器械清单，当前采用常见固定器械；首次到店按名称核对。</p></section>
+<section class="card panel today-workout"><div class="today-head"><div><p class="eyebrow">CHOOSE TODAY</p><h2 id="nextTitle">今日训练</h2><p id="nextMeta" class="guide"></p></div><div class="remaining"><strong id="hammerLeft">7</strong><span>铁锤剩余</span></div></div><label class="plan-choice">今天实际想练<select id="planChoice"><option value="0">胸＋三头</option><option value="1">背＋二头</option><option value="2">腿＋肩</option><option value="3">恢复训练 / 状态不好</option><option value="4">完全自由训练 / 自己组合</option></select></label><div class="pain-alert"><b>任何部位不舒服都可以马上换，不必完成原计划</b><span>肩、背、腰、膝、肘、腕或其他部位疼痛时：停止引发不适的动作，再选择无痛替代、跳过或切换计划。尖锐痛、疼痛持续加重、明显肿胀或活动受限时停止训练；胸闷、呼吸困难、眩晕或放射痛应及时就医。</span></div><div id="setTracker" class="set-tracker"></div><div id="postCardio" class="post-cardio"></div><button id="finishWorkout" class="secondary" type="button">保存实际完成内容并打卡</button></section>
+<section class="card panel transition-plan"><p class="eyebrow">GYM TRANSITION</p><h2>门店过渡计划</h2><div class="visit-plan"><span><b>铁锤 1</b> 胸＋三头＋坡度走</span><span><b>铁锤 2</b> 背＋二头＋爬楼机</span><span><b>铁锤 3</b> 腿＋肩＋轻松走</span><span><b>铁锤 4</b> 胸＋三头＋坡度走</span><span><b>铁锤 5</b> 背＋二头＋爬楼机</span><span><b>铁锤 6</b> 腿＋肩＋轻松走</span><span><b>铁锤 7</b> 胸＋三头＋坡度走</span></div><p class="guide">7次结束后，在唤燃星许坦东街店继续按 1→2→3 循环。现场找不到器械时，直接在动作卡中选择替代动作；身体不舒服时可随时切换训练。</p></section>
 <section class="card panel notice">
 <b>训练规则</b>
 <p>每个动作先做1–2组轻重量热身。正式组保留约2次余力，组间休息60–120秒。每次力量后完成15–30分钟有氧。</p>
@@ -63,39 +63,39 @@
 <div class="plan-grid">
 <article class="card plan">
 <span class="plan-no">1</span>
-<h2>胸 · 二头</h2>
-<p class="sub">胸部厚度与手臂线条｜约60分钟</p>
+<h2>胸 · 三头</h2>
+<p class="sub">胸部厚度与肱三头肌｜约60分钟</p>
 <ol>
 <li>
 <b>坐姿胸推机</b>
 <span>4组 × 8–10次｜把手对准胸中部，肩胛贴靠背</span>
 </li>
 <li>
-<b>上斜胸推机</b>
-<span>4组 × 8–10次｜把手对准上胸，不耸肩</span>
+<b>上斜哑铃卧推</b>
+<span>4组 × 8–10次｜凳背约30°，肩胛后收，不耸肩</span>
 </li>
 <li>
 <b>蝴蝶机夹胸</b>
 <span>3组 × 12–15次｜手肘微弯，胸前合拢</span>
 </li>
 <li>
-<b>牧师凳弯举机</b>
-<span>3组 × 10–12次｜腋窝贴垫，手肘不离垫</span>
+<b>绳索下压</b>
+<span>3组 × 10–12次｜手肘贴近身体，只伸肘</span>
 </li>
 <li>
-<b>绳索弯举（龙门架）</b>
-<span>3组 × 10–12次｜滑轮最低位，手肘夹紧</span>
+<b>绳索过顶臂屈伸</b>
+<span>3组 × 10–12次｜上臂固定，肘朝前</span>
 </li>
 <li>
-<b>哑铃锤式弯举</b>
-<span>2组 × 12次｜唯一自由重量动作，可选做</span>
+<b>器械双杠臂屈伸</b>
+<span>2组 × 10–12次｜身体稳定，肩前侧不适就换动作</span>
 </li>
 </ol>
 </article>
 <article class="card plan">
 <span class="plan-no">2</span>
-<h2>背 · 三头</h2>
-<p class="sub">背宽、背厚与手臂围度｜约60分钟</p>
+<h2>背 · 二头</h2>
+<p class="sub">背宽、背厚与肱二头肌｜约60分钟</p>
 <ol>
 <li>
 <b>高位下拉机</b>
@@ -106,20 +106,20 @@
 <span>4组 × 10次｜胸贴垫，手肘向后拉</span>
 </li>
 <li>
-<b>器械高位划船</b>
-<span>3组 × 10次｜胸贴垫，向肋骨方向拉</span>
+<b>单臂哑铃划船</b>
+<span>3组 × 每侧10次｜背部稳定，肘向髋部拉</span>
 </li>
 <li>
 <b>反向蝴蝶机</b>
 <span>3组 × 12–15次｜胸贴垫，手臂向两侧打开</span>
 </li>
 <li>
-<b>绳索下压（龙门架）</b>
-<span>3组 × 10–12次｜滑轮最高位，手肘固定</span>
+<b>哑铃弯举</b>
+<span>3组 × 10–12次｜手肘固定，不甩动身体</span>
 </li>
 <li>
-<b>坐姿臂屈伸机</b>
-<span>3组 × 10–12次｜背贴靠垫，只伸手肘</span>
+<b>哑铃锤式弯举</b>
+<span>3组 × 10–12次｜掌心相对，缓慢放下</span>
 </li>
 </ol>
 </article>
@@ -137,16 +137,16 @@
 <span>4组 × 10–12次｜膝轴对准机器转轴</span>
 </li>
 <li>
-<b>腿屈伸机</b>
-<span>3组 × 10–12次｜滚垫在脚踝上方</span>
+<b>保加利亚分腿蹲</b>
+<span>3组 × 每侧8–10次｜扶固定物保持平衡，前脚踩稳</span>
 </li>
 <li>
 <b>坐姿肩推机</b>
 <span>4组 × 8–10次｜把手略低于肩，腰背贴垫</span>
 </li>
 <li>
-<b>器械侧平举</b>
-<span>3组 × 12–15次｜手肘贴垫，抬至肩高</span>
+<b>哑铃侧平举</b>
+<span>3组 × 12–15次｜小重量，手肘带动至肩高</span>
 </li>
 <li>
 <b>反向蝴蝶机</b>
@@ -213,10 +213,10 @@
 </ol>
 </article>
 </div>
-<section class="card panel notice"><b>爬楼机参数</b><p>热身3–4档、3分钟；主体5–7档或约45–60步/分钟、15–20分钟。身体直立、脚掌踩实，扶手只保持平衡，不用手臂撑身体。适合胸二头或背三头后；腿肩后不做高强度爬楼。</p></section>
+<section class="card panel notice"><b>爬楼机参数</b><p>热身3–4档、3分钟；主体5–7档或约45–60步/分钟、15–20分钟。身体直立、脚掌踩实，扶手只保持平衡，不用手臂撑身体。适合胸三头或背二头后；腿肩后不做高强度爬楼。</p></section>
 <section class="card panel notice">
 <b>力量训练后的固定有氧</b>
-<p><b>胸二头后：</b>跑步机速度4.8–5.5km/h、坡度6–8%、25–30分钟；或爬楼机5–7档、15–20分钟。<br><b>背三头后：</b>爬楼机5–7档或45–60步/分钟、15–20分钟；或椭圆机阻力5–8档、25分钟。<br><b>腿肩后：</b>跑步机速度4–4.8km/h、坡度0–3%、15–20分钟；或单车低阻力15–20分钟，不做高强度爬楼。<br>全程保持能说短句；若必须用手臂撑扶手，说明强度过高。膝盖不舒服时优先改单车或椭圆机。</p>
+<p><b>胸三头后：</b>跑步机速度4.8–5.5km/h、坡度6–8%、25–30分钟；或爬楼机5–7档、15–20分钟。<br><b>背二头后：</b>爬楼机5–7档或45–60步/分钟、15–20分钟；或椭圆机阻力5–8档、25分钟。<br><b>腿肩后：</b>跑步机速度4–4.8km/h、坡度0–3%、15–20分钟；或单车低阻力15–20分钟，不做高强度爬楼。<br>全程保持能说短句；若必须用手臂撑扶手，说明强度过高。膝盖不舒服时优先改单车或椭圆机。</p>
 </section>
 </section>
 <section id="diet" class="tab-page">
@@ -277,9 +277,11 @@
 <h2>保存本次训练</h2>
 <label>训练地点<select id="gym"><option>铁锤健身·常青藤</option><option>唤燃星24小时·许坦东街店</option></select></label>
 <label>完成内容<select id="type">
-<option>训练1：胸和二头</option>
-<option>训练2：背和三头</option>
+<option>训练1：胸和三头</option>
+<option>训练2：背和二头</option>
 <option>训练3：腿和肩</option>
+<option>恢复训练</option>
+<option>自由训练</option>
 <option>每日腹部</option>
 <option>坡度快走</option>
 <option>单车 / 椭圆机</option>
